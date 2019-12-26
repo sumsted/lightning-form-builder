@@ -6,7 +6,8 @@ import sys
 def start(file_name):
     root = build_syntax_tree(file_name)
     traverse_tree(root)
-    
+    for track in tracks:
+        print(track)
 
 def create_node(file):
     line = file.readline()
@@ -72,6 +73,7 @@ def to_markup(data, level):
     print(line)
 
 
+tracks = []
 def add_attributes(tag_name, attributes):
     tag = "<"+tag_name
     try:
@@ -80,6 +82,8 @@ def add_attributes(tag_name, attributes):
                 tag += ' '+n
             elif str(v)[0] == '{':
                 tag += ' '+n+'='+str(v)
+                if n == 'value':
+                    tracks.append("@track "+v[1:-1]+" = '';")
             else:
                 tag += ' '+n+'="'+str(v)+'"'
     except Exception as e:
