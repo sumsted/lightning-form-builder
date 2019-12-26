@@ -1,0 +1,140 @@
+<template>
+<lightning-card title="Tracking" icon-name="custom:custom14">
+    <lightning-layout multiple-rows="readonly">
+        <lightning-layout-item size="12" padding="around-small" small-device-size="12">
+            <lightning-layout>
+                <lightning-layout-item size="6" padding="around-small">
+                    <lightning-input label="Tracking Number" value={trackingNumber}>
+                    </lightning-input>
+                </lightning-layout-item>
+            </lightning-layout>
+            <lightning-layout>
+                <lightning-layout-item size="6" padding="around-small">
+                    <lightning-button label="Search" onclick={inquireTrack}>
+                    </lightning-button>
+                </lightning-layout-item>
+            </lightning-layout>
+        </lightning-layout-item>
+        <lightning-layout-item size="12" padding="around-small" small-device-size="12">
+            <lightning-layout>
+                <lightning-layout-item size="6" padding="horizontal-small">
+                    <lightning-input label="Tracking Number" value={trackingNumber} readonly>
+                    </lightning-input>
+                </lightning-layout-item>
+                <lightning-layout-item size="6" padding="horizontal-small">
+                    <lightning-input label="Tracking Status" value={trackingStatus} readonly>
+                    </lightning-input>
+                </lightning-layout-item>
+            </lightning-layout>
+            <lightning-layout>
+                <lightning-layout-item size="6" padding="horizontal-small">
+                    <lightning-input label="Service" value={serviceType} readonly>
+                    </lightning-input>
+                </lightning-layout-item>
+                <lightning-layout-item size="6" padding="horizontal-small">
+                    <lightning-input label="Packaging" value={packaging} readonly>
+                    </lightning-input>
+                </lightning-layout-item>
+            </lightning-layout>
+            <lightning-layout>
+                <lightning-layout-item size="6" padding="horizontal-small">
+                    <lightning-input label="Dimensions" value={packageDimensions} readonly>
+                    </lightning-input>
+                </lightning-layout-item>
+                <lightning-layout-item size="6" padding="horizontal-small">
+                    <lightning-input label="Weight" value={packageWeight} readonly>
+                    </lightning-input>
+                </lightning-layout-item>
+            </lightning-layout>
+        </lightning-layout-item>
+        <lightning-layout-item size="12" padding="around-small" small-device-size="12">
+            <lightning-layout>
+                <lightning-layout-item size="6" medium-device-size="6">
+                    <lightning-layout>
+                        <lightning-layout-item size="12" padding="horizontal-small">
+                            <lightning-input label="Shipper Company" value={shipperCompany} readonly>
+                            </lightning-input>
+                            <lightning-input label="Name" value={shipperName} readonly>
+                            </lightning-input>
+                            <lightning-input label="Address" value={shipperAddress1} readonly>
+                            </lightning-input>
+                            <lightning-input label=" " value={shipperAddress2} readonly>
+                            </lightning-input>
+                        </lightning-layout-item>
+                    </lightning-layout>
+                    <lightning-layout>
+                        <lightning-layout-item size="5" padding="horizontal-small">
+                            <lightning-input label="City" value={shipperCity} readonly>
+                            </lightning-input>
+                        </lightning-layout-item>
+                        <lightning-layout-item size="2" padding="horizontal-small">
+                            <lightning-input label="State" value={shipperState} readonly>
+                            </lightning-input>
+                        </lightning-layout-item>
+                        <lightning-layout-item size="2" padding="horizontal-small">
+                            <lightning-input label="Country" value={shipperCountry} readonly>
+                            </lightning-input>
+                        </lightning-layout-item>
+                        <lightning-layout-item size="3" padding="horizontal-small">
+                            <lightning-input label="Zip" value={shipperZip} readonly>
+                            </lightning-input>
+                        </lightning-layout-item>
+                    </lightning-layout>
+                </lightning-layout-item>
+                <lightning-layout-item size="6" medium-device-size="6">
+                    <lightning-layout>
+                        <lightning-layout-item size="12" padding="horizontal-small">
+                            <lightning-input label="Recipient Company" value={recipientCompany} readonly>
+                            </lightning-input>
+                            <lightning-input label="Name" value={shipperName} readonly>
+                            </lightning-input>
+                            <lightning-input label="Address" value={recipientAddress1} readonly>
+                            </lightning-input>
+                            <lightning-input label=" " value={recipientAddress2} readonly>
+                            </lightning-input>
+                        </lightning-layout-item>
+                    </lightning-layout>
+                    <lightning-layout>
+                        <lightning-layout-item size="5" padding="horizontal-small">
+                            <lightning-input label="City" value={recipientCity} readonly>
+                            </lightning-input>
+                        </lightning-layout-item>
+                        <lightning-layout-item size="2" padding="horizontal-small">
+                            <lightning-input label="State" value={recipientState} readonly>
+                            </lightning-input>
+                        </lightning-layout-item>
+                        <lightning-layout-item size="2" padding="horizontal-small">
+                            <lightning-input label="Country" value={recipientCountry} readonly>
+                            </lightning-input>
+                        </lightning-layout-item>
+                        <lightning-layout-item size="3" padding="horizontal-small">
+                            <lightning-input label="Zip" value={recipientZip} readonly>
+                            </lightning-input>
+                        </lightning-layout-item>
+                    </lightning-layout>
+                </lightning-layout-item>
+            </lightning-layout>
+        </lightning-layout-item>
+        <lightning-layout-item size="12" padding="around-small" small-device-size="12">
+            <lightning-layout>
+                <lightning-layout-item size="3" padding="horizontal-small">
+                    <lightning-input label="Scan Time" value={scanTime} readonly>
+                    </lightning-input>
+                </lightning-layout-item>
+                <lightning-layout-item size="2" padding="horizontal-small">
+                    <lightning-input label="Code" value={scanCode} readonly>
+                    </lightning-input>
+                </lightning-layout-item>
+                <lightning-layout-item size="3" padding="horizontal-small">
+                    <lightning-input label="Status" value={scanStatus} readonly>
+                    </lightning-input>
+                </lightning-layout-item>
+                <lightning-layout-item size="4" padding="horizontal-small">
+                    <lightning-input label="Location" value={scanLocation} readonly>
+                    </lightning-input>
+                </lightning-layout-item>
+            </lightning-layout>
+        </lightning-layout-item>
+    </lightning-layout>
+</lightning-card>
+</template>

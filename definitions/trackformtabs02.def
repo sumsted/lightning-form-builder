@@ -1,0 +1,77 @@
+card: {"title":"Tracking","icon-name":"custom:custom14"}
+    layout: {"multiple-rows":"readonly"}
+        item: {"size": 12, "padding":"around-small", "small-device-size":"12"}
+            layout:
+                item: {"size":6, "padding":"around-small"}
+                    input: {"label":"Tracking Number", "value":"{trackingNumber}"}
+                item: {"size":6, "padding":"around-small"}
+                    div: {"style":"position:relative;height:100%;width:100%"}
+                        div: {"style":"position:absolute;bottom:0"}
+                            button: {"label":"Search", "onclick":"{inquireTrack}"}
+        item: {"size": 12, "padding":"around-small", "small-device-size":"12"}
+            tabset:
+                tab: {"label": "Status"}
+                    item: {"size": 12, "padding":"horizontal-small", "small-device-size":"12"}
+                        layout:
+                            item: {"size":6, "padding":"horizontal-small"}
+                                input: {"label":"Tracking Number", "value":"{trackingNumber}"}
+                            item: {"size":6, "padding":"horizontal-small"}
+                                input: {"label":"Tracking Status", "value":"{trackingStatus}"}
+                        layout:
+                            item: {"size":6, "padding":"horizontal-small"}
+                                input: {"label":"Service", "value":"{serviceType}"}
+                            item: {"size":6, "padding":"horizontal-small"}
+                                input: {"label":"Packaging", "value":"{packaging}"}
+                        layout:
+                            item: {"size":6, "padding":"horizontal-small"}
+                                input: {"label":"Dimensions", "value":"{packageDimensions}"}
+                            item: {"size":6, "padding":"horizontal-small"}
+                                input: {"label":"Weight", "value":"{packageWeight}"}
+                tab: {"label": "Parties"}
+                    item: {"size": 12, "padding":"horizontal-small", "small-device-size":"12"}
+                        layout: 
+                            item: {"size": 6, "medium-device-size": 6}
+                                tile: {"label":"Shipper"}
+                                    layout:
+                                        item: {"size": 12, "padding":"horizontal-small"} 
+                                            input: {"label":" Company", "value":"{shipperCompany}"}
+                                            input: {"label":"Name", "value":"{shipperName}"}
+                                            input: {"label":"Address", "value":"{shipperAddress1}"}
+                                            input: {"label":" ", "value":"{shipperAddress2}"}
+                                    layout:
+                                        item: {"size": 5, "padding":"horizontal-small"} 
+                                            input: {"label":"City", "value":"{shipperCity}"}
+                                        item: {"size": 2, "padding":"horizontal-small"} 
+                                            input: {"label":"State", "value":"{shipperState}"}
+                                        item: {"size": 2, "padding":"horizontal-small"} 
+                                            input: {"label":"Country", "value":"{shipperCountry}"}
+                                        item: {"size": 3, "padding":"horizontal-small"} 
+                                            input: {"label":"Zip", "value":"{shipperZip}"}
+                            item: {"size": 6, "medium-device-size": 6}  
+                                tile: {"label":"Recipient"}
+                                    layout:
+                                        item: {"size": 12, "padding":"horizontal-small"} 
+                                            input: {"label":"Company", "value":"{recipientCompany}"}
+                                            input: {"label":"Name", "value":"{shipperName}"}
+                                            input: {"label":"Address", "value":"{recipientAddress1}"}
+                                            input: {"label":" ", "value":"{recipientAddress2}"}
+                                    layout:
+                                        item: {"size": 5, "padding":"horizontal-small"} 
+                                            input: {"label":"City", "value":"{recipientCity}"}
+                                        item: {"size": 2, "padding":"horizontal-small"} 
+                                            input: {"label":"State", "value":"{recipientState}"}
+                                        item: {"size": 2, "padding":"horizontal-small"} 
+                                            input: {"label":"Country", "value":"{recipientCountry}"}
+                                        item: {"size": 3, "padding":"horizontal-small"} 
+                                            input: {"label":"Zip", "value":"{recipientZip}"}
+                tab: {"label": "Scans"}
+                    item: {"size": 12, "padding":"horizontal-small", "small-device-size":"12"}
+                        layout:
+                            item: {"size":3, "padding":"horizontal-small"}
+                                input: {"label":"Scan Time", "value":"{scanTime}"}
+                            item: {"size":2, "padding":"horizontal-small"}
+                                input: {"label":"Code", "value":"{scanCode}"}
+                            item: {"size":3, "padding":"horizontal-small"}
+                                input: {"label":"Status", "value":"{scanStatus}"}
+                            item: {"size":4, "padding":"horizontal-small"}
+                                input: {"label":"Location", "value":"{scanLocation}"}
