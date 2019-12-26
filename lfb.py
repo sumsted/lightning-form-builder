@@ -106,7 +106,8 @@ name_map = {
     'tabset': 'lightning-tabset',
     'tab': 'lightning-tab',
     'rich': 'lightning-formatted-rich-text',
-    'tile': 'lightning-tile'
+    'tile': 'lightning-tile',
+    'format': 'lightning-formatted-text'
 }
 def traverse_tree(current):
     try:

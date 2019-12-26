@@ -1,5 +1,5 @@
 <template>
-<lightning-card title="Tracking" icon-name="custom:custom14">
+<lightning-card title="Tracking" icon-name="custom:custom20">
     <lightning-layout multiple-rows="readonly">
         <lightning-layout-item size="12" padding="around-small" small-device-size="12">
             <lightning-layout>
@@ -14,6 +14,12 @@
                             </lightning-button>
                         </div>
                     </div>
+                </lightning-layout-item>
+            </lightning-layout>
+            <lightning-layout>
+                <lightning-layout-item size="12" padding="around-small">
+                    <lightning-formatted-text value={receivedMessage}>
+                    </lightning-formatted-text>
                 </lightning-layout-item>
             </lightning-layout>
         </lightning-layout-item>
