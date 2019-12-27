@@ -8,7 +8,7 @@ Using a yaml-like definition file, generate markup for a Lighting Web Component.
 * Those names not found in tag_map are used as named.
 * JSON after a tag is translated to tag attributes.
 * Templated @track names are translated without quotes.
-* A list of all @track names is comment at end of markup.
+* A list of all @track names is added to a comment at end of markup.
 
 Usage : python lfb.py form.def > form.html
 
